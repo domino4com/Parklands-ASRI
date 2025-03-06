@@ -21,3 +21,15 @@ Pls modify the code like this:
 - Double-click on the .kml file so it opens in Google Earth.
 - Expand the .kml file in Temporary Places and select the line below the .kml file - See A in the image
 - Now click on the Play button to fly the path - See B in the image
+
+![Google Earth Pro](Google%20Earth%20Pro.png)
+
+
+## Why that prompt?
+- I used a .csv file insted of using Google Sheet directly, since that gives least amount of authorisation issues, and the input is locked in place.
+- I give as much info as possible which saves time, so I elaborate on the units, which column to use etc.
+- I am specific about my environment, i.e. Google Colab and Google Earth, so it knows limitation and/or opportunities and can limit errors that occurs because of unknowns. For the same reason I use Google Colab instead of a local Python, so it knows exactly what to expect of the wellknown environment.
+- I knew it might want futher info on integration and earth model, so I pre-empted that.
+- I looked up the start position in Google Maps, and added South Africa, just in case it would swap lat and lon.
+- I wanted to make sure I could use the code right away, so I wanted it use the right column headers first time and also include ```!pip``` statements that can prep Google Colab with special modules, however non was needed here.
+- It generated a .csv file, which does not give altitude, hence the prompt update. Google Earth also complained about the file size, so I asked the AI engine to reduce it.
